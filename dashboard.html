@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Guru - E-Presensi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.3/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard Guru</h1>
+        <a href="index.html" class="btn">Kembali ke Home</a>
+    </header>
+    <main>
+        <section id="ekskul-list">
+            <h2>Pilih Ekstrakurikuler</h2>
+            <select id="ekskul-select">
+                <option value="basket">Basket</option>
+                <option value="musik">Musik</option>
+                <option value="renang">Renang</option>
+            </select>
+        </section>
+        <section id="qr-section">
+            <h2>QR Code Absensi</h2>
+            <div id="qrcode"></div>
+            <p>Scan QR ini untuk absensi otomatis.</p>
+        </section>
+        <section id="attendance-log">
+            <h2>Log Absensi</h2>
+            <ul id="log-list"></ul>
+            <button id="reset-btn" class="btn">Reset Data</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
