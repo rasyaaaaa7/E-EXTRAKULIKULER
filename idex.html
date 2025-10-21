@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>E-Presensi Ekstrakurikuler</h1>
-        <p>Sistem Absensi Modern dengan QR Code</p>
-    </header>
-    <main>
-        <section id="stats">
-            <h2>Statistik Absensi</h2>
-            <div class="stat-cards">
-                <!-- Statistik akan diisi oleh JS -->
-            </div>
-        </section>
-        <section id="actions">
-            <a href="dashboard.html" class="btn">Masuk ke Dashboard Guru</a>
-        </section>
-    </main>
+    <h1>E-Presensi Ekstrakurikuler</h1>
+    <p>Sistem Absensi Sederhana</p>
+    
+    <div class="stat-cards" id="stats">
+        <!-- Statistik akan diisi JS -->
+    </div>
+    
+    <form id="absen-form">
+        <select id="ekskul-select">
+            <option value="basket">Basket</option>
+            <option value="musik">Musik</option>
+            <option value="renang">Renang</option>
+        </select>
+        <input type="text" id="student-name" placeholder="Nama Siswa" required>
+        <button type="submit">Absen</button>
+    </form>
+    
     <script src="script.js"></script>
 </body>
 </html>
